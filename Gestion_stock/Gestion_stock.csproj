@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7759FA2E-4200-427D-8CFD-31A1178B3482}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_stock</RootNamespace>
+    <AssemblyName>Gestion_stock</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=8.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Ander\3D Objects\Gestion_stock\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\achat.cs" />
+    <Compile Include="classes\clsclient.cs" />
+    <Compile Include="classes\clsfournisseur.cs" />
+    <Compile Include="classes\dataconnexion.cs" />
+    <Compile Include="classes\MYCONNEXION.cs" />
+    <Compile Include="classes\Produits.cs" />
+    <Compile Include="classes\Stocks.cs" />
+    <Compile Include="classes\Ventes.cs" />
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sorties\etatStock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\etatStock.Designer.cs">
+      <DependentUpon>etatStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\facture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\facture.Designer.cs">
+      <DependentUpon>facture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\journalEntreSortie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\journalEntreSortie.Designer.cs">
+      <DependentUpon>journalEntreSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\listeAchat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\listeAchat.Designer.cs">
+      <DependentUpon>listeAchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\listeClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\listeClient.Designer.cs">
+      <DependentUpon>listeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\listeFournisseur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\listeFournisseur.Designer.cs">
+      <DependentUpon>listeFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\listeProduit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\listeProduit.Designer.cs">
+      <DependentUpon>listeProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\listeVente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\listeVente.Designer.cs">
+      <DependentUpon>listeVente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\rapport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\rapport.Designer.cs">
+      <DependentUpon>rapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\rapportjourApprovisionnement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\rapportjourApprovisionnement.Designer.cs">
+      <DependentUpon>rapportjourApprovisionnement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\rapportVenteJour.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\rapportVenteJour.Designer.cs">
+      <DependentUpon>rapportVenteJour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\approvisionnemnt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\approvisionnemnt.Designer.cs">
+      <DependentUpon>approvisionnemnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\client.Designer.cs">
+      <DependentUpon>client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\fournisseur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\fournisseur.Designer.cs">
+      <DependentUpon>fournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\produit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\produit.Designer.cs">
+      <DependentUpon>produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\vente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\vente.Designer.cs">
+      <DependentUpon>vente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sorties\etatStock.resx">
+      <DependentUpon>etatStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\facture.resx">
+      <DependentUpon>facture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\journalEntreSortie.resx">
+      <DependentUpon>journalEntreSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\listeAchat.resx">
+      <DependentUpon>listeAchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\listeClient.resx">
+      <DependentUpon>listeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\listeFournisseur.resx">
+      <DependentUpon>listeFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\listeProduit.resx">
+      <DependentUpon>listeProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\listeVente.resx">
+      <DependentUpon>listeVente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\rapport.resx">
+      <DependentUpon>rapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\rapportjourApprovisionnement.resx">
+      <DependentUpon>rapportjourApprovisionnement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\rapportVenteJour.resx">
+      <DependentUpon>rapportVenteJour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\approvisionnemnt.resx">
+      <DependentUpon>approvisionnemnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\client.resx">
+      <DependentUpon>client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\fournisseur.resx">
+      <DependentUpon>fournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\produit.resx">
+      <DependentUpon>produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\vente.resx">
+      <DependentUpon>vente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\customer_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\tags_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\product_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\basket_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\livestock_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\buy_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\save_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\save_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\delete_trash_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\update_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\print_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\NAR2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\user_240px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\update.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
