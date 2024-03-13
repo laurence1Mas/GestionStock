@@ -23,6 +23,7 @@ namespace Gestion_stock.usercontols
             tool.SetToolTip(btnmodifier, "Modifier");
             tool.SetToolTip(btnsupprimer, "Supprimer");
             tool.SetToolTip(pictureBox1, "actualiser");
+            loadListe();
         }
 
         private void client_Load(object sender, EventArgs e)

@@ -299,10 +299,10 @@
             // txtrecherche
             // 
             this.txtrecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrecherche.Location = new System.Drawing.Point(138, 304);
+            this.txtrecherche.Location = new System.Drawing.Point(138, 317);
             this.txtrecherche.Multiline = true;
             this.txtrecherche.Name = "txtrecherche";
-            this.txtrecherche.Size = new System.Drawing.Size(232, 41);
+            this.txtrecherche.Size = new System.Drawing.Size(272, 28);
             this.txtrecherche.TabIndex = 12;
             this.txtrecherche.TextChanged += new System.EventHandler(this.txtrecherche_TextChanged);
             // 

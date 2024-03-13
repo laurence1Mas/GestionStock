@@ -137,12 +137,6 @@
     <Compile Include="sorties\listeVente.Designer.cs">
       <DependentUpon>listeVente.cs</DependentUpon>
     </Compile>
-    <Compile Include="sorties\rapport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="sorties\rapport.Designer.cs">
-      <DependentUpon>rapport.cs</DependentUpon>
-    </Compile>
     <Compile Include="sorties\rapportjourApprovisionnement.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -231,9 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sorties\listeVente.resx">
       <DependentUpon>listeVente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sorties\rapport.resx">
-      <DependentUpon>rapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sorties\rapportjourApprovisionnement.resx">
       <DependentUpon>rapportjourApprovisionnement.cs</DependentUpon>

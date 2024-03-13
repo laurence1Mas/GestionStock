@@ -127,7 +127,7 @@ namespace Gestion_stock.usercontols
 
         private void btnimprimer_Click(object sender, EventArgs e)
         {
-            sorties.listeAchat rpt = new sorties.listeAchat();
+            sorties.listeVente rpt = new sorties.listeVente();
             rpt.DataSource = M.get_Report_Z("afficher_vente");
             using (ReportPrintTool printool = new ReportPrintTool(rpt))
             {
