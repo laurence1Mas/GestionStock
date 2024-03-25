@@ -44,7 +44,10 @@
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -56,6 +59,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +93,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sorties\bon_entrer_stock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\bon_entrer_stock.Designer.cs">
+      <DependentUpon>bon_entrer_stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\bon_sortie_stock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\bon_sortie_stock.Designer.cs">
+      <DependentUpon>bon_sortie_stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="sorties\etatStock.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -179,6 +195,12 @@
     <Compile Include="usercontols\stock.Designer.cs">
       <DependentUpon>stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontols\Userdashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Userdashboard.Designer.cs">
+      <DependentUpon>Userdashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontols\vente.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,6 +224,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="sorties\bon_entrer_stock.resx">
+      <DependentUpon>bon_entrer_stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\bon_sortie_stock.resx">
+      <DependentUpon>bon_sortie_stock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sorties\etatStock.resx">
       <DependentUpon>etatStock.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\stock.resx">
       <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Userdashboard.resx">
+      <DependentUpon>Userdashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\vente.resx">
       <DependentUpon>vente.cs</DependentUpon>
@@ -310,6 +341,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="icones\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\adherants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\icone panier.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

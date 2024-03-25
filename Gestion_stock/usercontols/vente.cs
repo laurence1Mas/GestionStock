@@ -176,5 +176,15 @@ namespace Gestion_stock.usercontols
         {
             loadlist();
         }
+
+        private void btn_bon_sortie_Click(object sender, EventArgs e)
+        {
+            sorties.bon_sortie_stock rpt = new sorties.bon_sortie_stock();
+            rpt.DataSource = M.get_Report_Bon_sortie_stock("Vvente", "dateVente", "client", txtdatevente.Text, cmbrefclient.Text);
+            using (ReportPrintTool printool = new ReportPrintTool(rpt))
+            {
+                printool.ShowPreviewDialog();
+            }
+        }
     }
 }

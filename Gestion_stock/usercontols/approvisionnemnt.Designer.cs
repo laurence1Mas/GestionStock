@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtrecherche = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dgachat = new System.Windows.Forms.DataGridView();
@@ -58,6 +58,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnjour = new System.Windows.Forms.Button();
             this.btnimprimer = new System.Windows.Forms.Button();
+            this.btn_bon_entrer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgachat)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -89,14 +90,14 @@
             // 
             this.dgachat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgachat.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgachat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgachat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgachat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgachat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgcode,
@@ -105,14 +106,14 @@
             this.dgquantiteA,
             this.dgprixau,
             this.dgdateachat});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgachat.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgachat.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgachat.Location = new System.Drawing.Point(32, 353);
             this.dgachat.Name = "dgachat";
             this.dgachat.Size = new System.Drawing.Size(998, 215);
@@ -389,11 +390,29 @@
             this.btnimprimer.UseVisualStyleBackColor = true;
             this.btnimprimer.Click += new System.EventHandler(this.btnimprimer_Click);
             // 
+            // btn_bon_entrer
+            // 
+            this.btn_bon_entrer.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_bon_entrer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_bon_entrer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bon_entrer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bon_entrer.ForeColor = System.Drawing.Color.Black;
+            this.btn_bon_entrer.Image = global::Gestion_stock.Properties.Resources.print_26px;
+            this.btn_bon_entrer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_bon_entrer.Location = new System.Drawing.Point(631, 309);
+            this.btn_bon_entrer.Name = "btn_bon_entrer";
+            this.btn_bon_entrer.Size = new System.Drawing.Size(123, 38);
+            this.btn_bon_entrer.TabIndex = 27;
+            this.btn_bon_entrer.Text = " B.entrer";
+            this.btn_bon_entrer.UseVisualStyleBackColor = true;
+            this.btn_bon_entrer.Click += new System.EventHandler(this.btn_bon_entrer_Click);
+            // 
             // approvisionnemnt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_bon_entrer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnjour);
             this.Controls.Add(this.btnimprimer);
@@ -445,5 +464,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgdateachat;
         private System.Windows.Forms.Button btnjour;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_bon_entrer;
     }
 }

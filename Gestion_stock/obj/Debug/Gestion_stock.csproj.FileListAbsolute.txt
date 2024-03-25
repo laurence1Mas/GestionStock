@@ -404,3 +404,8 @@ E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.stock.resource
 E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.vente.resources
 E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.csproj.GenerateResource.Cache
 E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.exe.licenses
+E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.sorties.bon_entrer_stock.resources
+E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.sorties.bon_sortie_stock.resources
+E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.Userdashboard.resources
+E:\GestionStock\Gestion_stock\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+E:\GestionStock\Gestion_stock\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml

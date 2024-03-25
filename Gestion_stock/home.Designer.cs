@@ -43,6 +43,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btndashboard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -52,6 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btndashboard);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnVente);
@@ -81,7 +83,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel3.Location = new System.Drawing.Point(3, 203);
+            this.panel3.Location = new System.Drawing.Point(2, 246);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 43);
             this.panel3.TabIndex = 16;
@@ -96,7 +98,7 @@
             this.btnVente.ForeColor = System.Drawing.Color.White;
             this.btnVente.Image = global::Gestion_stock.Properties.Resources.buy_30px;
             this.btnVente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVente.Location = new System.Drawing.Point(29, 513);
+            this.btnVente.Location = new System.Drawing.Point(28, 556);
             this.btnVente.Name = "btnVente";
             this.btnVente.Size = new System.Drawing.Size(148, 41);
             this.btnVente.TabIndex = 15;
@@ -114,7 +116,7 @@
             this.btnStock.ForeColor = System.Drawing.Color.White;
             this.btnStock.Image = global::Gestion_stock.Properties.Resources.livestock_24px;
             this.btnStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStock.Location = new System.Drawing.Point(29, 450);
+            this.btnStock.Location = new System.Drawing.Point(28, 493);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(148, 41);
             this.btnStock.TabIndex = 14;
@@ -132,7 +134,7 @@
             this.btnFournisseur.ForeColor = System.Drawing.Color.White;
             this.btnFournisseur.Image = global::Gestion_stock.Properties.Resources.customer_30px1;
             this.btnFournisseur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFournisseur.Location = new System.Drawing.Point(29, 388);
+            this.btnFournisseur.Location = new System.Drawing.Point(28, 431);
             this.btnFournisseur.Name = "btnFournisseur";
             this.btnFournisseur.Size = new System.Drawing.Size(148, 41);
             this.btnFournisseur.TabIndex = 13;
@@ -150,7 +152,7 @@
             this.btnApprov.ForeColor = System.Drawing.Color.White;
             this.btnApprov.Image = global::Gestion_stock.Properties.Resources.basket_30px;
             this.btnApprov.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApprov.Location = new System.Drawing.Point(29, 328);
+            this.btnApprov.Location = new System.Drawing.Point(28, 371);
             this.btnApprov.Name = "btnApprov";
             this.btnApprov.Size = new System.Drawing.Size(148, 41);
             this.btnApprov.TabIndex = 12;
@@ -168,7 +170,7 @@
             this.btnproduit.ForeColor = System.Drawing.Color.White;
             this.btnproduit.Image = global::Gestion_stock.Properties.Resources.tags_30px;
             this.btnproduit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnproduit.Location = new System.Drawing.Point(29, 268);
+            this.btnproduit.Location = new System.Drawing.Point(28, 311);
             this.btnproduit.Name = "btnproduit";
             this.btnproduit.Size = new System.Drawing.Size(146, 41);
             this.btnproduit.TabIndex = 10;
@@ -186,7 +188,7 @@
             this.btnclient.ForeColor = System.Drawing.Color.White;
             this.btnclient.Image = global::Gestion_stock.Properties.Resources.customer_30px;
             this.btnclient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclient.Location = new System.Drawing.Point(31, 205);
+            this.btnclient.Location = new System.Drawing.Point(30, 248);
             this.btnclient.Name = "btnclient";
             this.btnclient.Size = new System.Drawing.Size(146, 41);
             this.btnclient.TabIndex = 2;
@@ -255,6 +257,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "copy-right 2023 designed by laurence mak tel: +243976729986";
             // 
+            // btndashboard
+            // 
+            this.btndashboard.BackColor = System.Drawing.Color.DarkBlue;
+            this.btndashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndashboard.FlatAppearance.BorderSize = 0;
+            this.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btndashboard.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndashboard.ForeColor = System.Drawing.Color.White;
+            this.btndashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndashboard.Location = new System.Drawing.Point(30, 184);
+            this.btndashboard.Name = "btndashboard";
+            this.btndashboard.Size = new System.Drawing.Size(146, 41);
+            this.btndashboard.TabIndex = 3;
+            this.btndashboard.Text = "Dashboard";
+            this.btndashboard.UseVisualStyleBackColor = false;
+            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click);
+            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +316,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btndashboard;
     }
 }
 

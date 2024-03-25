@@ -56,6 +56,7 @@
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrPanel4 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
@@ -77,7 +78,6 @@
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.xrPanel4 = new DevExpress.XtraReports.UI.XRPanel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
@@ -164,9 +164,9 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 8.166663F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(66.0417F, 64.83332F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(66.0417F, 73.16666F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             this.xrPictureBox1.StylePriority.UseBorders = false;
             // 
@@ -202,9 +202,9 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox2.Image")));
-            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(350.052F, 8.166678F);
+            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(350.052F, 0F);
             this.xrPictureBox2.Name = "xrPictureBox2";
-            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(62.94797F, 64.83331F);
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(62.94797F, 73.16665F);
             this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             this.xrPictureBox2.StylePriority.UseBorders = false;
             // 
@@ -225,6 +225,14 @@
             this.xrLabel3});
             this.ReportHeader.HeightF = 128.2291F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrPanel4
+            // 
+            this.xrPanel4.BackColor = System.Drawing.Color.Navy;
+            this.xrPanel4.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 103.125F);
+            this.xrPanel4.Name = "xrPanel4";
+            this.xrPanel4.SizeF = new System.Drawing.SizeF(372.9167F, 2.083332F);
+            this.xrPanel4.StylePriority.UseBackColor = false;
             // 
             // xrLabel5
             // 
@@ -485,14 +493,6 @@
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             storedProcQuery1});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
-            // 
-            // xrPanel4
-            // 
-            this.xrPanel4.BackColor = System.Drawing.Color.Navy;
-            this.xrPanel4.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 103.125F);
-            this.xrPanel4.Name = "xrPanel4";
-            this.xrPanel4.SizeF = new System.Drawing.SizeF(372.9167F, 2.083332F);
-            this.xrPanel4.StylePriority.UseBackColor = false;
             // 
             // facture
             // 

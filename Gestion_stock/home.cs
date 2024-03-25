@@ -72,5 +72,13 @@ namespace Gestion_stock
         {
             Application.Exit();
         }
+
+        private void btndashboard_Click(object sender, EventArgs e)
+        {
+            panel3.Height = btnVente.Height;
+            panel3.Top = btnVente.Height;
+            container.Controls.Clear();
+            container.Controls.Add(new Userdashboard());
+        }
     }
 }

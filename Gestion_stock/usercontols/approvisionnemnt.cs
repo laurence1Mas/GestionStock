@@ -162,5 +162,14 @@ namespace Gestion_stock.usercontols
             loadlist();
         }
 
+        private void btn_bon_entrer_Click(object sender, EventArgs e)
+        {
+            sorties.bon_entrer_stock rpt = new sorties.bon_entrer_stock();
+            rpt.DataSource = M.get_Report_Bon_entrer_stock("Vachat", "dateAchat", "fournisseur", txtdateAchat.Text,cmbfournisseur.Text);
+            using (ReportPrintTool printool = new ReportPrintTool(rpt))
+            {
+                printool.ShowPreviewDialog();
+            }
+        }
     }
 }

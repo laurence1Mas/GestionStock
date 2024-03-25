@@ -59,6 +59,7 @@
             this.btnjour = new System.Windows.Forms.Button();
             this.btnimprimer = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_bon_sortie = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgventes)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -404,11 +405,29 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btn_bon_sortie
+            // 
+            this.btn_bon_sortie.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_bon_sortie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_bon_sortie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bon_sortie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bon_sortie.ForeColor = System.Drawing.Color.Black;
+            this.btn_bon_sortie.Image = global::Gestion_stock.Properties.Resources.print_26px;
+            this.btn_bon_sortie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_bon_sortie.Location = new System.Drawing.Point(490, 303);
+            this.btn_bon_sortie.Name = "btn_bon_sortie";
+            this.btn_bon_sortie.Size = new System.Drawing.Size(123, 38);
+            this.btn_bon_sortie.TabIndex = 41;
+            this.btn_bon_sortie.Text = " B.sortie";
+            this.btn_bon_sortie.UseVisualStyleBackColor = true;
+            this.btn_bon_sortie.Click += new System.EventHandler(this.btn_bon_sortie_Click);
+            // 
             // vente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_bon_sortie);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnfacture);
             this.Controls.Add(this.btnjour);
@@ -462,5 +481,6 @@
         private System.Windows.Forms.Button btnjour;
         private System.Windows.Forms.Button btnfacture;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_bon_sortie;
     }
 }

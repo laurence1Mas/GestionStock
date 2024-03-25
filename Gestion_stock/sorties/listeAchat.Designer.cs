@@ -176,7 +176,7 @@
             this.xrLabel1,
             this.xrLabel2,
             this.xrPictureBox2});
-            this.TopMargin.HeightF = 100F;
+            this.TopMargin.HeightF = 105.4167F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -184,9 +184,9 @@
             // xrPictureBox1
             // 
             this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 5.000004F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(131.6667F, 89.99999F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(131.6667F, 105.4167F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // xrLabel1
@@ -218,9 +218,9 @@
             // xrPictureBox2
             // 
             this.xrPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox2.Image")));
-            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(518.3333F, 5.000004F);
+            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(518.3333F, 0F);
             this.xrPictureBox2.Name = "xrPictureBox2";
-            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(131.6667F, 89.99999F);
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(131.6667F, 105.4167F);
             this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // BottomMargin
@@ -438,6 +438,7 @@
             this.sqlDataSource1});
             this.DataMember = "afficher_achat";
             this.DataSource = this.sqlDataSource1;
+            this.Margins = new System.Drawing.Printing.Margins(100, 100, 105, 100);
             this.Version = "15.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();

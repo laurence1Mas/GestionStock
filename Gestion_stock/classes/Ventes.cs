@@ -228,7 +228,6 @@ namespace Gestion_stock.classes
                 value = cmd.ExecuteNonQuery();
             }
             return value;
-
         }
     }
 }
