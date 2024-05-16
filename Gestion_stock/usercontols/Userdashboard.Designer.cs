@@ -34,10 +34,6 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -60,7 +56,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.graphiqueAchat = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.graphiqueVente = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graphiqueAchat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graphiqueVente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -292,63 +288,62 @@
             this.graphiqueAchat.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.graphiqueAchat.Legends.Add(legend1);
-            this.graphiqueAchat.Location = new System.Drawing.Point(51, 318);
+            this.graphiqueAchat.Location = new System.Drawing.Point(30, 254);
             this.graphiqueAchat.Name = "graphiqueAchat";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "produit";
             this.graphiqueAchat.Series.Add(series1);
-            this.graphiqueAchat.Size = new System.Drawing.Size(469, 254);
+            this.graphiqueAchat.Size = new System.Drawing.Size(503, 273);
             this.graphiqueAchat.TabIndex = 7;
             this.graphiqueAchat.Text = "Achats";
             // 
             // graphiqueVente
             // 
             this.graphiqueVente.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.graphiqueVente.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            this.graphiqueVente.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.graphiqueVente.BorderlineColor = System.Drawing.Color.DodgerBlue;
             chartArea2.Name = "ChartArea1";
             this.graphiqueVente.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.graphiqueVente.Legends.Add(legend2);
-            this.graphiqueVente.Location = new System.Drawing.Point(595, 318);
+            this.graphiqueVente.Location = new System.Drawing.Point(555, 254);
             this.graphiqueVente.Name = "graphiqueVente";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "Series1";
+            series2.Name = "produit";
             this.graphiqueVente.Series.Add(series2);
-            this.graphiqueVente.Size = new System.Drawing.Size(420, 254);
+            this.graphiqueVente.Size = new System.Drawing.Size(476, 273);
             this.graphiqueVente.TabIndex = 8;
             this.graphiqueVente.Text = "Ventes";
             // 
-            // chart1
+            // label5
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(51, 173);
-            this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series4.Legend = "Legend1";
-            series4.Name = "Series2";
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
-            this.chart1.Size = new System.Drawing.Size(300, 139);
-            this.chart1.TabIndex = 10;
-            this.chart1.Text = "chart1";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(65, 228);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(162, 19);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "approvisonnements";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(551, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 19);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Ventes";
             // 
             // Userdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.graphiqueVente);
             this.Controls.Add(this.graphiqueAchat);
             this.Controls.Add(this.panel7);
@@ -380,8 +375,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.graphiqueAchat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.graphiqueVente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -409,6 +404,7 @@
         private System.Windows.Forms.Label lblvente;
         private System.Windows.Forms.DataVisualization.Charting.Chart graphiqueAchat;
         private System.Windows.Forms.DataVisualization.Charting.Chart graphiqueVente;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

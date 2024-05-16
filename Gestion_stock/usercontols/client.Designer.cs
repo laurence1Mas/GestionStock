@@ -249,6 +249,7 @@
             this.btnsupprimer.TabIndex = 2;
             this.btnsupprimer.Text = "   Suprimer";
             this.btnsupprimer.UseVisualStyleBackColor = false;
+            this.btnsupprimer.Visible = false;
             this.btnsupprimer.Click += new System.EventHandler(this.btnsupprimer_Click);
             // 
             // btnmodifier
@@ -260,7 +261,7 @@
             this.btnmodifier.ForeColor = System.Drawing.Color.White;
             this.btnmodifier.Image = global::Gestion_stock.Properties.Resources.update_24px;
             this.btnmodifier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmodifier.Location = new System.Drawing.Point(23, 91);
+            this.btnmodifier.Location = new System.Drawing.Point(23, 102);
             this.btnmodifier.Name = "btnmodifier";
             this.btnmodifier.Size = new System.Drawing.Size(123, 38);
             this.btnmodifier.TabIndex = 1;
@@ -277,7 +278,7 @@
             this.btnenregistrer.ForeColor = System.Drawing.Color.White;
             this.btnenregistrer.Image = global::Gestion_stock.Properties.Resources.save_26px;
             this.btnenregistrer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnenregistrer.Location = new System.Drawing.Point(23, 32);
+            this.btnenregistrer.Location = new System.Drawing.Point(23, 43);
             this.btnenregistrer.Name = "btnenregistrer";
             this.btnenregistrer.Size = new System.Drawing.Size(123, 38);
             this.btnenregistrer.TabIndex = 0;

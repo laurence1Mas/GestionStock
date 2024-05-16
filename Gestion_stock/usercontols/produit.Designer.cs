@@ -118,6 +118,7 @@
             this.txtquantite.Name = "txtquantite";
             this.txtquantite.Size = new System.Drawing.Size(257, 34);
             this.txtquantite.TabIndex = 5;
+            this.txtquantite.Text = "0";
             // 
             // txtprixU
             // 
@@ -126,6 +127,7 @@
             this.txtprixU.Name = "txtprixU";
             this.txtprixU.Size = new System.Drawing.Size(257, 34);
             this.txtprixU.TabIndex = 5;
+            this.txtprixU.Text = "0";
             // 
             // label3
             // 

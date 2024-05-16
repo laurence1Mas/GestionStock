@@ -150,6 +150,7 @@ namespace Gestion_stock.classes
                 SqlParameter prquantite = new SqlParameter("@quantite", Achats.Quantite_achat);
                 SqlParameter prprixu = new SqlParameter("@prixu", Achats.PAunitaires1);
                 SqlParameter prproduit = new SqlParameter("@produit", Achats.Produit_id);
+                //SqlParameter prdate = new SqlParameter("@produit", Achats.date);
 
                 cmd.Parameters.Add(prcode);
                 cmd.Parameters.Add(prfournisseur);

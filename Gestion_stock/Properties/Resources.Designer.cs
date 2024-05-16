@@ -133,6 +133,16 @@ namespace Gestion_stock.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap help_60px {
+            get {
+                object obj = ResourceManager.GetObject("help_60px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icone_panier {
             get {
                 object obj = ResourceManager.GetObject("icone panier", resourceCulture);
@@ -146,6 +156,16 @@ namespace Gestion_stock.Properties {
         internal static System.Drawing.Bitmap livestock_24px {
             get {
                 object obj = ResourceManager.GetObject("livestock_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout_rounded_down_48px {
+            get {
+                object obj = ResourceManager.GetObject("logout_rounded_down_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

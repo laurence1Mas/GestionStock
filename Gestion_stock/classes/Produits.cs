@@ -134,20 +134,20 @@ namespace Gestion_stock.classes
             con = new dataconnexion().DBConnect();
             if (con != null)
             {
-                string strquery = "exec update_produits @code,@nom,@descriptions,@prix,@stock,@barcode;";
+                string strquery = "exec update_produits @code,@nom,@descriptions,@barcode;";
 
                 SqlCommand cmd = new SqlCommand(strquery, con);
                 SqlParameter prcode = new SqlParameter("@code", produit.id);
                 SqlParameter prnom = new SqlParameter("@nom", produit.nom);
                 SqlParameter prdescription = new SqlParameter("@descriptions", produit.designation);
-                SqlParameter prprixu = new SqlParameter("@prix", produit.prix);
-                SqlParameter prquantite = new SqlParameter("@stock", produit.quantite);
+                //SqlParameter prprixu = new SqlParameter("@prix", produit.prix);
+                //SqlParameter prquantite = new SqlParameter("@stock", produit.quantite);
                 SqlParameter prdevise = new SqlParameter("@barcode", produit.Barcode);
                 cmd.Parameters.Add(prcode);
                 cmd.Parameters.Add(prnom);
                 cmd.Parameters.Add(prdescription);
-                cmd.Parameters.Add(prprixu);
-                cmd.Parameters.Add(prquantite);
+                //cmd.Parameters.Add(prprixu);
+                //cmd.Parameters.Add(prquantite);
                 cmd.Parameters.Add(prdevise);
                 value = cmd.ExecuteNonQuery();
                 return value;

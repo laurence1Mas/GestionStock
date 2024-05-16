@@ -165,6 +165,12 @@
     <Compile Include="sorties\rapportVenteJour.Designer.cs">
       <DependentUpon>rapportVenteJour.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontols\aide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\aide.Designer.cs">
+      <DependentUpon>aide.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontols\approvisionnemnt.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     <EmbeddedResource Include="sorties\rapportVenteJour.resx">
       <DependentUpon>rapportVenteJour.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\aide.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usercontols\approvisionnemnt.resx">
       <DependentUpon>approvisionnemnt.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,6 +359,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="icones\icone panier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\logout_rounded_down_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\help_60px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

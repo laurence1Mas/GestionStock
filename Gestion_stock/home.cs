@@ -80,5 +80,16 @@ namespace Gestion_stock
             container.Controls.Clear();
             container.Controls.Add(new Userdashboard());
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            container.Controls.Clear();
+            container.Controls.Add(new aide());
+        }
     }
 }

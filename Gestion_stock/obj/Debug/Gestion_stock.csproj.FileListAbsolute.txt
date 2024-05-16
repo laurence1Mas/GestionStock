@@ -409,3 +409,4 @@ E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.sorties.bon_sortie_stock.r
 E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.Userdashboard.resources
 E:\GestionStock\Gestion_stock\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
 E:\GestionStock\Gestion_stock\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+E:\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.aide.resources

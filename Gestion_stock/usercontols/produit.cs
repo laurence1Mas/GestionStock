@@ -84,12 +84,12 @@ namespace Gestion_stock.usercontols
                     loadliste();
                     refresh();
                 }
-                //else
-                //{
-                //    MessageBox.Show("Operation non effectuer", "produit", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    loadliste();
-                //    refresh();
-                //}
+                else
+                {
+                    MessageBox.Show("Operation non effectuer", "produit", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    loadliste();
+                    refresh();
+                }
             }
             catch ( Exception ex)
             {

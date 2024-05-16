@@ -21,7 +21,6 @@ namespace Gestion_stock.usercontols
             chargement_label();
             graphiqueAchats();
             graphiqueventes();
-            graphiqueApprovisionnemnt();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -34,7 +33,6 @@ namespace Gestion_stock.usercontols
             chargement_label();
             graphiqueAchats();
             graphiqueventes();
-            graphiqueApprovisionnemnt();
         }
 
         private void chargement_label()
@@ -76,29 +74,12 @@ namespace Gestion_stock.usercontols
             if (con != null)
             {
                 con = new dataconnexion().DBConnect();
-                string query = "select top 10 count(*)as Flux,produits.nom as produit from achats inner join produits on produits.id=achats.produit_id group by produits.nom,achats.dateAchat";
+                string query = "select top 10 dateAchat as Flux,produits.nom as produit from achats inner join produits on produits.id=achats.produit_id group by produits.nom,achats.dateAchat";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    graphiqueAchat.Series["Series1"].Points.AddXY(reader["produit"],reader["Flux"]);
-                }
-            }
-        }
-        private void graphiqueApprovisionnemnt()
-        {
-            con = new dataconnexion().DBConnect();
-            if (con != null)
-            {
-                con = new dataconnexion().DBConnect();
-                string query = "select top 5 count(*)as Flux,produits.nom as produit,achats.dateAchat as dateAchat from achats inner join produits on produits.id=achats.produit_id group by produits.nom,achats.dateAchat";
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    chart1.Series["Series1"].Points.AddXY(reader["produit"], reader["dateAchat"]);
-                    //chart1.Series["Series2"].Points.AddXY(reader["produit"], reader["dateAchat"]);
-
+                    graphiqueAchat.Series["produit"].Points.AddXY(reader["produit"],reader["Flux"]);
                 }
             }
         }
@@ -108,13 +89,12 @@ namespace Gestion_stock.usercontols
             if (con != null)
             {
                 con = new dataconnexion().DBConnect();
-                string query = "select top 5 count(*)as Flux,produits.nom as produit from vente inner join produits on produits.id=vente.produit_id group by produits.nom,vente.dateVente";
+                string query = "select top 10 dateVente as Flux,produits.nom as produit from vente inner join produits on produits.id=vente.produit_id group by produits.nom,vente.dateVente";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    graphiqueVente.Series["Series1"].Points.AddXY(reader["produit"], reader["Flux"]);
-
+                    graphiqueVente.Series["produit"].Points.AddXY(reader["produit"], reader["Flux"]);
                 }
             }
         }
