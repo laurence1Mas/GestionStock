@@ -213,6 +213,16 @@ namespace Gestion_stock.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap product_64px {
+            get {
+                object obj = ResourceManager.GetObject("product_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_24px {
             get {
                 object obj = ResourceManager.GetObject("save_24px", resourceCulture);

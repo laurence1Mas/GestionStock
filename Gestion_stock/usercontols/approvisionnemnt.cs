@@ -25,7 +25,6 @@ namespace Gestion_stock.usercontols
             tool.SetToolTip(btnenregistrer, "Enregistrer");
             tool.SetToolTip(btnmodifier, "Modifier");
             tool.SetToolTip(btnsupprimer, "Supprimer");
-            tool.SetToolTip(pictureBox1, "actualiser");
         }
         private void bindingclasse() {
             achats.Id = txtcode.Text;
@@ -95,6 +94,7 @@ namespace Gestion_stock.usercontols
                 loadlist();
                 setnull();
             }
+            btnenregistrer.Enabled = true;
         }
 
         private void btnsupprimer_Click(object sender, EventArgs e)
@@ -114,6 +114,7 @@ namespace Gestion_stock.usercontols
                 loadlist();
                 setnull();
             }
+            btnenregistrer.Enabled = true;
         }
 
         private void dgachat_DoubleClick(object sender, EventArgs e)
@@ -147,16 +148,6 @@ namespace Gestion_stock.usercontols
             }
         }
 
-        private void btnjour_Click(object sender, EventArgs e)
-        {
-            sorties.rapportjourApprovisionnement rpt = new sorties.rapportjourApprovisionnement();
-            rpt.DataSource = M.get_Report_approvijour("Vachat", "dateAchat", txtdateAchat.Text);
-            using (ReportPrintTool printool = new ReportPrintTool(rpt))
-            {
-                printool.ShowPreviewDialog();
-            }
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             loadlist();
@@ -171,5 +162,36 @@ namespace Gestion_stock.usercontols
                 printool.ShowPreviewDialog();
             }
         }
+
+        private void rapportchekdate()
+        {
+            // Vérifiez que les contrôles dateDebut et dateFin sont correctement définis et contiennent des valeurs valides
+            DateTime dateDebuts = dateDebut.Value; 
+            DateTime dateFins = dateFin.Value;
+            try
+            {
+                // Créez une instance de votre rapport
+                sorties.rapportApprovisionnementCheckDate rpt = new sorties.rapportApprovisionnementCheckDate();
+
+                // Remplissez le rapport avec les données en utilisant votre fonction
+                rpt.DataSource = M.getAchatsEntreDates(dateDebuts, dateFins, "GetAchatsEntreDates");
+
+                // Affichez l'aperçu du rapport
+                using (ReportPrintTool printool = new ReportPrintTool(rpt))
+                {
+                    printool.ShowPreviewDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la génération du rapport : " + ex.Message);
+            }
+        }
+
+        private void btncheckdate_Click(object sender, EventArgs e)
+        {
+            rapportchekdate();
+        }
+
     }
 }

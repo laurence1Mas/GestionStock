@@ -55,23 +55,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnjour = new System.Windows.Forms.Button();
             this.btnimprimer = new System.Windows.Forms.Button();
             this.btn_bon_entrer = new System.Windows.Forms.Button();
+            this.dateDebut = new System.Windows.Forms.DateTimePicker();
+            this.dateFin = new System.Windows.Forms.DateTimePicker();
+            this.btncheckdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgachat)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtrecherche
             // 
             this.txtrecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrecherche.Location = new System.Drawing.Point(144, 320);
+            this.txtrecherche.Location = new System.Drawing.Point(126, 317);
             this.txtrecherche.Multiline = true;
             this.txtrecherche.Name = "txtrecherche";
-            this.txtrecherche.Size = new System.Drawing.Size(222, 30);
+            this.txtrecherche.Size = new System.Drawing.Size(178, 30);
             this.txtrecherche.TabIndex = 24;
             this.txtrecherche.TextChanged += new System.EventHandler(this.txtrecherche_TextChanged);
             // 
@@ -80,7 +80,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label7.Location = new System.Drawing.Point(51, 331);
+            this.label7.Location = new System.Drawing.Point(33, 328);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 19);
             this.label7.TabIndex = 25;
@@ -344,35 +344,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Fournisseur";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Gestion_stock.Properties.Resources.update;
-            this.pictureBox1.Location = new System.Drawing.Point(942, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btnjour
-            // 
-            this.btnjour.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnjour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnjour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnjour.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnjour.ForeColor = System.Drawing.Color.Black;
-            this.btnjour.Image = global::Gestion_stock.Properties.Resources.print_26px;
-            this.btnjour.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnjour.Location = new System.Drawing.Point(760, 309);
-            this.btnjour.Name = "btnjour";
-            this.btnjour.Size = new System.Drawing.Size(123, 38);
-            this.btnjour.TabIndex = 26;
-            this.btnjour.Text = "jour";
-            this.btnjour.UseVisualStyleBackColor = true;
-            this.btnjour.Click += new System.EventHandler(this.btnjour_Click);
-            // 
             // btnimprimer
             // 
             this.btnimprimer.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -382,7 +353,7 @@
             this.btnimprimer.ForeColor = System.Drawing.Color.Black;
             this.btnimprimer.Image = global::Gestion_stock.Properties.Resources.print_26px;
             this.btnimprimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnimprimer.Location = new System.Drawing.Point(889, 309);
+            this.btnimprimer.Location = new System.Drawing.Point(907, 309);
             this.btnimprimer.Name = "btnimprimer";
             this.btnimprimer.Size = new System.Drawing.Size(123, 38);
             this.btnimprimer.TabIndex = 23;
@@ -399,7 +370,7 @@
             this.btn_bon_entrer.ForeColor = System.Drawing.Color.Black;
             this.btn_bon_entrer.Image = global::Gestion_stock.Properties.Resources.print_26px;
             this.btn_bon_entrer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_bon_entrer.Location = new System.Drawing.Point(631, 309);
+            this.btn_bon_entrer.Location = new System.Drawing.Point(778, 309);
             this.btn_bon_entrer.Name = "btn_bon_entrer";
             this.btn_bon_entrer.Size = new System.Drawing.Size(123, 38);
             this.btn_bon_entrer.TabIndex = 27;
@@ -407,14 +378,50 @@
             this.btn_bon_entrer.UseVisualStyleBackColor = true;
             this.btn_bon_entrer.Click += new System.EventHandler(this.btn_bon_entrer_Click);
             // 
+            // dateDebut
+            // 
+            this.dateDebut.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateDebut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateDebut.Location = new System.Drawing.Point(501, 324);
+            this.dateDebut.MinDate = new System.DateTime(1755, 1, 1, 0, 0, 0, 0);
+            this.dateDebut.Name = "dateDebut";
+            this.dateDebut.Size = new System.Drawing.Size(105, 23);
+            this.dateDebut.TabIndex = 28;
+            // 
+            // dateFin
+            // 
+            this.dateFin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateFin.Location = new System.Drawing.Point(612, 324);
+            this.dateFin.MinDate = new System.DateTime(1755, 1, 1, 0, 0, 0, 0);
+            this.dateFin.Name = "dateFin";
+            this.dateFin.Size = new System.Drawing.Size(108, 23);
+            this.dateFin.TabIndex = 29;
+            // 
+            // btncheckdate
+            // 
+            this.btncheckdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btncheckdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btncheckdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncheckdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncheckdate.ForeColor = System.Drawing.Color.Black;
+            this.btncheckdate.Image = global::Gestion_stock.Properties.Resources.print_26px;
+            this.btncheckdate.Location = new System.Drawing.Point(726, 309);
+            this.btncheckdate.Name = "btncheckdate";
+            this.btncheckdate.Size = new System.Drawing.Size(46, 38);
+            this.btncheckdate.TabIndex = 30;
+            this.btncheckdate.UseVisualStyleBackColor = true;
+            this.btncheckdate.Click += new System.EventHandler(this.btncheckdate_Click);
+            // 
             // approvisionnemnt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btncheckdate);
+            this.Controls.Add(this.dateFin);
+            this.Controls.Add(this.dateDebut);
             this.Controls.Add(this.btn_bon_entrer);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnjour);
             this.Controls.Add(this.btnimprimer);
             this.Controls.Add(this.txtrecherche);
             this.Controls.Add(this.label7);
@@ -428,7 +435,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,8 +468,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgquantiteA;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgprixau;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgdateachat;
-        private System.Windows.Forms.Button btnjour;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_bon_entrer;
+        private System.Windows.Forms.DateTimePicker dateDebut;
+        private System.Windows.Forms.DateTimePicker dateFin;
+        private System.Windows.Forms.Button btncheckdate;
     }
 }

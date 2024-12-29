@@ -22,7 +22,6 @@ namespace Gestion_stock.usercontols
             tool.SetToolTip(btnenregistrer, "Enregistrer");
             tool.SetToolTip(btnmodifier, "Modifier");
             tool.SetToolTip(btnsupprimer, "Supprimer");
-            tool.SetToolTip(pictureBox1, "actualiser");
             loadListe();
         }
 
@@ -108,6 +107,7 @@ namespace Gestion_stock.usercontols
                 loadListe();
                 refresh();
             }
+            btnenregistrer.Enabled = true;
         }
 
         private void btnsupprimer_Click(object sender, EventArgs e)
@@ -144,9 +144,9 @@ namespace Gestion_stock.usercontols
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            loadListe();
+
         }
     }
 }

@@ -6,9 +6,9 @@ using DevExpress.XtraReports.UI;
 
 namespace Gestion_stock.sorties
 {
-    public partial class rapportjourApprovisionnement : DevExpress.XtraReports.UI.XtraReport
+    public partial class rapportDepensechekdate : DevExpress.XtraReports.UI.XtraReport
     {
-        public rapportjourApprovisionnement()
+        public rapportDepensechekdate()
         {
             InitializeComponent();
         }

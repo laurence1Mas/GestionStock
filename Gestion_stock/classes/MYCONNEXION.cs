@@ -18,6 +18,108 @@ namespace Gestion_stock.classes
         public static DataSet ds = new DataSet();
 
         //==========================METHODE D'IMPRESSION D'UNE LISTE=============
+        public DataSet getAchatsEntreDates(DateTime dateDebut, DateTime dateFin, string nomTable)
+        {
+            con = new dataconnexion().DBConnect();
+            DataSet dst = new DataSet();
+            try
+            {
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+
+                // Préparer la commande pour exécuter la procédure stockée
+                SqlCommand cmd = new SqlCommand("GetAchatsEntreDates", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Ajouter les paramètres de date
+                cmd.Parameters.Add(new SqlParameter("@DateDebut", dateDebut));
+                cmd.Parameters.Add(new SqlParameter("@DateFin", dateFin));
+
+                dt = new SqlDataAdapter(cmd);
+
+                // Remplir le DataSet avec le résultat de la procédure
+                dt.Fill(dst, nomTable);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose();
+                con.Close();
+            }
+
+            return dst;
+        }
+
+        public DataSet getVentesEntreDates(DateTime dateDebut, DateTime dateFin, string nomTable)
+        {
+            con = new dataconnexion().DBConnect();
+            DataSet dst = new DataSet();
+            try
+            {
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+
+                // Préparer la commande pour exécuter la procédure stockée
+                SqlCommand cmd = new SqlCommand("GetVentesEntreDates", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Ajouter les paramètres de date
+                cmd.Parameters.Add(new SqlParameter("@DateDebut", dateDebut));
+                cmd.Parameters.Add(new SqlParameter("@DateFin", dateFin));
+
+                dt = new SqlDataAdapter(cmd);
+
+                // Remplir le DataSet avec le résultat de la procédure
+                dt.Fill(dst, nomTable);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose();
+                con.Close();
+            }
+
+            return dst;
+        }
+
+        public DataSet getJournalsEntreDates(DateTime dateDebut, DateTime dateFin, string nomTable)
+        {
+            con = new dataconnexion().DBConnect();
+            DataSet dst = new DataSet();
+            try
+            {
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+
+                // Préparer la commande pour exécuter la procédure stockée
+                SqlCommand cmd = new SqlCommand("GetJournalsEntreDates", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Ajouter les paramètres de date
+                cmd.Parameters.Add(new SqlParameter("@DateDebut", dateDebut));
+                cmd.Parameters.Add(new SqlParameter("@DateFin", dateFin));
+
+                dt = new SqlDataAdapter(cmd);
+
+                // Remplir le DataSet avec le résultat de la procédure
+                dt.Fill(dst, nomTable);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose();
+                con.Close();
+            }
+
+            return dst;
+        }
+
         public DataSet get_Report_Z(string nomTable)
         {
             con = new dataconnexion().DBConnect();
@@ -175,7 +277,7 @@ namespace Gestion_stock.classes
         }
 
         //==========================IMPRESSION DE 'UN BON DE SORTIE STOCK===========================//
-        public DataSet get_Report_Bon_sortie_stock(string nomTable, string datetable, string fournisseur, string value, string value2)
+        public DataSet get_Report_Bon_sortie_stock(string nomTable, string datetable, string client, string value, string value2)
         {
             con = new dataconnexion().DBConnect();
             DataSet dst;
@@ -183,7 +285,7 @@ namespace Gestion_stock.classes
             {
                 //innitialiseconnect();
                 if (!con.State.ToString().ToLower().Equals("open")) con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Vvente WHERE dateVente =@date and client= @client", con);
+                SqlCommand cmd = new SqlCommand("select * from Vvente WHERE dateVente =@date and client =@client", con);
                 cmd.Parameters.AddWithValue("@date", value);
                 cmd.Parameters.AddWithValue("@client", value2);
                 dt = new SqlDataAdapter(cmd);

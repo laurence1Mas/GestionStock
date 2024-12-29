@@ -88,6 +88,7 @@ namespace Gestion_stock.usercontols
                 loadlist();
                 refresh();
             }
+            btnenregistrer.Enabled = true;
         }
 
         private void btnsupprimer_Click(object sender, EventArgs e)
@@ -107,6 +108,7 @@ namespace Gestion_stock.usercontols
                 loadlist();
                 refresh();
             }
+            btnenregistrer.Enabled = true;
         }
 
         private void dgventes_DoubleClick(object sender, EventArgs e)
@@ -154,21 +156,11 @@ namespace Gestion_stock.usercontols
 
             if (value == 0)
             {
-                MessageBox.Show("Operation effectuée avec succès", "panier", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Operation effectuée avec succès", "panier", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 MessageBox.Show("Operation effectuée avec succès", "panier", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void btnjour_Click(object sender, EventArgs e)
-        {
-            sorties.rapportVenteJour rpt = new sorties.rapportVenteJour();
-            rpt.DataSource = M.get_Report_venteJour("affiche_ventes","dateVentes",txtdatevente.Text);
-            using (ReportPrintTool printool = new ReportPrintTool(rpt))
-            {
-                printool.ShowPreviewDialog();
             }
         }
 
@@ -180,11 +172,40 @@ namespace Gestion_stock.usercontols
         private void btn_bon_sortie_Click(object sender, EventArgs e)
         {
             sorties.bon_sortie_stock rpt = new sorties.bon_sortie_stock();
-            rpt.DataSource = M.get_Report_Bon_sortie_stock("Vvente", "dateVente", "client", txtdatevente.Text, cmbrefclient.Text);
+            rpt.DataSource = M.get_Report_Bon_sortie_stock("Vvente", "client", "datevente", txtdatevente.Text, cmbrefclient.Text);
             using (ReportPrintTool printool = new ReportPrintTool(rpt))
             {
                 printool.ShowPreviewDialog();
             }
+        }
+
+        private void rapportchekdate()
+        {
+            // Vérifiez que les contrôles dateDebut et dateFin sont correctement définis et contiennent des valeurs valides
+            DateTime dateDebuts = dateDebut.Value;
+            DateTime dateFins = dateFin.Value;
+            try
+            {
+                // Créez une instance de votre rapport
+                sorties.rapportVenteChekDate rpt = new sorties.rapportVenteChekDate();
+
+                // Remplissez le rapport avec les données en utilisant votre fonction
+                rpt.DataSource = M.getVentesEntreDates(dateDebuts, dateFins, "GetVentesEntreDates");
+
+                // Affichez l'aperçu du rapport
+                using (ReportPrintTool printool = new ReportPrintTool(rpt))
+                {
+                    printool.ShowPreviewDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la génération du rapport : " + ex.Message);
+            }
+        }
+        private void btncheckdate_Click(object sender, EventArgs e)
+        {
+            rapportchekdate();
         }
     }
 }

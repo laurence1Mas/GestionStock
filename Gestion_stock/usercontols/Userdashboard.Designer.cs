@@ -220,7 +220,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Gestion_stock.Properties.Resources.people;
+            this.pictureBox3.Image = global::Gestion_stock.Properties.Resources.product_64px;
             this.pictureBox3.Location = new System.Drawing.Point(100, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(73, 79);

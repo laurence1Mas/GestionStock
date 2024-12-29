@@ -44,9 +44,9 @@ namespace Gestion_stock.usercontols
             txtcode.Text = "";
             txtNom.Text = "";
             txtdesignation.Text = "";
-            txtquantite.Text = "";
-            txtprixU.Text = "";
             txtbarcode.Text = "";
+            txtprixU.Text = "0";
+            txtquantite.Text = "0";
         }
 
         private void produit_Load(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace Gestion_stock.usercontols
             {
                 MessageBox.Show("eureur", "produit"+ ex,MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            loadliste();
+            btnenregistrer.Enabled = true;
         }
 
         private void btnsupprimer_Click(object sender, EventArgs e)

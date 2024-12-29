@@ -89,6 +89,7 @@ namespace Gestion_stock.usercontols
                 loadListe();
                 refresh();
             }
+            btnenregistrer.Enabled = true;
         }
 
         private void btnenregistrer_Click_1(object sender, EventArgs e)
@@ -142,11 +143,6 @@ namespace Gestion_stock.usercontols
             {
                 printool.ShowPreviewDialog();
             }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            loadListe();
         }
     }
 }

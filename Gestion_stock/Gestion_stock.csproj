@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_beyonce.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -73,6 +91,7 @@
   <ItemGroup>
     <Compile Include="classes\achat.cs" />
     <Compile Include="classes\clsclient.cs" />
+    <Compile Include="classes\clsdepense.cs" />
     <Compile Include="classes\clsfournisseur.cs" />
     <Compile Include="classes\dataconnexion.cs" />
     <Compile Include="classes\MYCONNEXION.cs" />
@@ -153,17 +172,23 @@
     <Compile Include="sorties\listeVente.Designer.cs">
       <DependentUpon>listeVente.cs</DependentUpon>
     </Compile>
-    <Compile Include="sorties\rapportjourApprovisionnement.cs">
+    <Compile Include="sorties\rapportDepensechekdate.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="sorties\rapportjourApprovisionnement.Designer.cs">
-      <DependentUpon>rapportjourApprovisionnement.cs</DependentUpon>
+    <Compile Include="sorties\rapportDepensechekdate.Designer.cs">
+      <DependentUpon>rapportDepensechekdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="sorties\rapportVenteJour.cs">
+    <Compile Include="sorties\rapportVenteChekDate.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="sorties\rapportVenteJour.Designer.cs">
-      <DependentUpon>rapportVenteJour.cs</DependentUpon>
+    <Compile Include="sorties\rapportVenteChekDate.Designer.cs">
+      <DependentUpon>rapportVenteChekDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorties\rapportApprovisionnementCheckDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\rapportApprovisionnementCheckDate.Designer.cs">
+      <DependentUpon>rapportApprovisionnementCheckDate.cs</DependentUpon>
     </Compile>
     <Compile Include="usercontols\aide.cs">
       <SubType>UserControl</SubType>
@@ -182,6 +207,12 @@
     </Compile>
     <Compile Include="usercontols\client.Designer.cs">
       <DependentUpon>client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\depense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\depense.Designer.cs">
+      <DependentUpon>depense.cs</DependentUpon>
     </Compile>
     <Compile Include="usercontols\fournisseur.cs">
       <SubType>UserControl</SubType>
@@ -260,11 +291,14 @@
     <EmbeddedResource Include="sorties\listeVente.resx">
       <DependentUpon>listeVente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sorties\rapportjourApprovisionnement.resx">
-      <DependentUpon>rapportjourApprovisionnement.cs</DependentUpon>
+    <EmbeddedResource Include="sorties\rapportApprovisionnementCheckDate.resx">
+      <DependentUpon>rapportApprovisionnementCheckDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sorties\rapportVenteJour.resx">
-      <DependentUpon>rapportVenteJour.cs</DependentUpon>
+    <EmbeddedResource Include="sorties\rapportDepensechekdate.resx">
+      <DependentUpon>rapportDepensechekdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\rapportVenteChekDate.resx">
+      <DependentUpon>rapportVenteChekDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\aide.resx">
       <DependentUpon>aide.cs</DependentUpon>
@@ -274,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\client.resx">
       <DependentUpon>client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\depense.resx">
+      <DependentUpon>depense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\fournisseur.resx">
       <DependentUpon>fournisseur.cs</DependentUpon>
@@ -365,6 +402,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="icones\help_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fish.ico" />
+    <None Include="icones\product_64px.png" />
+    <Content Include="icons8_beyonce.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -56,11 +56,9 @@
             this.dgquantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgbarcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnimprimer = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgproduit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -113,6 +111,7 @@
             // 
             // txtquantite
             // 
+            this.txtquantite.Enabled = false;
             this.txtquantite.Location = new System.Drawing.Point(448, 155);
             this.txtquantite.Multiline = true;
             this.txtquantite.Name = "txtquantite";
@@ -122,6 +121,7 @@
             // 
             // txtprixU
             // 
+            this.txtprixU.Enabled = false;
             this.txtprixU.Location = new System.Drawing.Point(448, 68);
             this.txtprixU.Multiline = true;
             this.txtprixU.Name = "txtprixU";
@@ -358,24 +358,11 @@
             this.btnimprimer.UseVisualStyleBackColor = true;
             this.btnimprimer.Click += new System.EventHandler(this.btnimprimer_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Gestion_stock.Properties.Resources.update;
-            this.pictureBox1.Location = new System.Drawing.Point(956, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // produit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnimprimer);
             this.Controls.Add(this.txtrecherche);
             this.Controls.Add(this.label7);
@@ -389,7 +376,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgproduit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,6 +409,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgprixU;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgquantite;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgbarcode;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
