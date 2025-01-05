@@ -30,33 +30,36 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btndepense = new System.Windows.Forms.Button();
+            this.btndashboard = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.container = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btndashboard = new System.Windows.Forms.Button();
             this.btnVente = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
             this.btnFournisseur = new System.Windows.Forms.Button();
             this.btnApprov = new System.Windows.Forms.Button();
             this.btnproduit = new System.Windows.Forms.Button();
             this.btnclient = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.container = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btndepense);
             this.panel1.Controls.Add(this.pictureBox5);
@@ -93,6 +96,107 @@
             this.btndepense.UseVisualStyleBackColor = false;
             this.btndepense.Click += new System.EventHandler(this.btndepense_Click);
             // 
+            // btndashboard
+            // 
+            this.btndashboard.BackColor = System.Drawing.Color.DarkBlue;
+            this.btndashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndashboard.FlatAppearance.BorderSize = 0;
+            this.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btndashboard.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndashboard.ForeColor = System.Drawing.Color.White;
+            this.btndashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndashboard.Location = new System.Drawing.Point(14, 130);
+            this.btndashboard.Name = "btndashboard";
+            this.btndashboard.Size = new System.Drawing.Size(180, 41);
+            this.btndashboard.TabIndex = 3;
+            this.btndashboard.Text = "Dashboard";
+            this.btndashboard.UseVisualStyleBackColor = false;
+            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(206, 41);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(724, 497);
+            this.panel2.TabIndex = 1;
+            // 
+            // container
+            // 
+            this.container.BackColor = System.Drawing.Color.White;
+            this.container.Location = new System.Drawing.Point(209, 44);
+            this.container.Name = "container";
+            this.container.Size = new System.Drawing.Size(1066, 590);
+            this.container.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(200, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1087, 34);
+            this.panel4.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(416, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "NARADA Soft";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(468, 637);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(493, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "copy-right 2023 designed by laurence mak tel: +243976729986";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Gestion_stock.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(1038, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Gestion_stock.Properties.Resources.settings_32px;
+            this.pictureBox3.Location = new System.Drawing.Point(78, 590);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 44);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Gestion_stock.Properties.Resources.NAR2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 121);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -118,23 +222,6 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // btndashboard
-            // 
-            this.btndashboard.BackColor = System.Drawing.Color.DarkBlue;
-            this.btndashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndashboard.FlatAppearance.BorderSize = 0;
-            this.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btndashboard.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndashboard.ForeColor = System.Drawing.Color.White;
-            this.btndashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndashboard.Location = new System.Drawing.Point(14, 130);
-            this.btndashboard.Name = "btndashboard";
-            this.btndashboard.Size = new System.Drawing.Size(180, 41);
-            this.btndashboard.TabIndex = 3;
-            this.btndashboard.Text = "Dashboard";
-            this.btndashboard.UseVisualStyleBackColor = false;
-            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click);
             // 
             // btnVente
             // 
@@ -244,77 +331,6 @@
             this.btnclient.UseVisualStyleBackColor = false;
             this.btnclient.Click += new System.EventHandler(this.btnclient_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(206, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(724, 497);
-            this.panel2.TabIndex = 1;
-            // 
-            // container
-            // 
-            this.container.BackColor = System.Drawing.Color.White;
-            this.container.Location = new System.Drawing.Point(209, 44);
-            this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(1066, 590);
-            this.container.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1087, 34);
-            this.panel4.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Gestion_stock.Properties.Resources.close;
-            this.pictureBox2.Location = new System.Drawing.Point(1038, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(416, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NARADA Soft";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(468, 637);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(493, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "copy-right 2023 designed by laurence mak tel: +243976729986";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Gestion_stock.Properties.Resources.NAR2;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,12 +347,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NARADA-APP";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,6 +379,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btndepense;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

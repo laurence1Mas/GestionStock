@@ -86,5 +86,10 @@ namespace Gestion_stock
             container.Controls.Clear();
             container.Controls.Add(new depense());
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

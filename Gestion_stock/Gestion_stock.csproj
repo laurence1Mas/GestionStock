@@ -406,6 +406,7 @@
   <ItemGroup>
     <Content Include="fish.ico" />
     <None Include="icones\product_64px.png" />
+    <None Include="icones\settings_32px.png" />
     <Content Include="icons8_beyonce.ico" />
   </ItemGroup>
   <ItemGroup>

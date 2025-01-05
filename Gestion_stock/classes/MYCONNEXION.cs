@@ -197,58 +197,6 @@ namespace Gestion_stock.classes
             return dst;
         }
 
-        //=========================METHODE D'IMPRESSION DU rapportjour Approvisionnement===================
-        public DataSet get_Report_approvijour(string nomTable, string datetable, string value)
-        {
-            con = new dataconnexion().DBConnect();
-            DataSet dst;
-            try
-            {
-                //innitialiseconnect();
-                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Vachat WHERE dateAchat =@date", con);
-                cmd.Parameters.AddWithValue("@date", value);
-                dt = new SqlDataAdapter(cmd);
-                dst = new DataSet();
-                dt.Fill(dst, nomTable);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                dt.Dispose(); con.Close();
-            }
-            return dst;
-        }
-
-        //=========================METHODE D'IMPRESSION DU Rapportjour===================
-        public DataSet get_Report_venteJour(string nomTable, string datetable, string value)
-        {
-            con = new dataconnexion().DBConnect();
-            DataSet dst;
-            try
-            {
-                //innitialiseconnect();
-                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
-                SqlCommand cmd = new SqlCommand("select * from affiche_ventes WHERE dateVente =@date", con);
-                cmd.Parameters.AddWithValue("@date", value);
-                dt = new SqlDataAdapter(cmd);
-                dst = new DataSet();
-                dt.Fill(dst, nomTable);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                dt.Dispose(); con.Close();
-            }
-            return dst;
-        }
-
         //==========================IMPRESSION DE 'UN BON D'ENTRER STOCK===========================//
         public DataSet get_Report_Bon_entrer_stock(string nomTable, string datetable, string fournisseur, string value, string value2)
         {
