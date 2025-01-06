@@ -187,7 +187,7 @@ namespace Gestion_stock.classes
         {
             List<Achat> list = new List<Achat>();
             con = new dataconnexion().DBConnect();
-            string strquery = "exec afficher_achat";
+            string strquery = "exec afficherAchatLimit";
             SqlCommand cmd = new SqlCommand(strquery, con);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())

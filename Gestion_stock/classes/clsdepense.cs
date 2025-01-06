@@ -155,7 +155,7 @@ namespace Gestion_stock.classes
         {
             List<clsdepense> list = new List<clsdepense>();
             con = new dataconnexion().DBConnect();
-            string strquery = "exec afficher_journal ;";
+            string strquery = "exec afficher_journalLimit;";
             SqlCommand cmd = new SqlCommand(strquery, con);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())

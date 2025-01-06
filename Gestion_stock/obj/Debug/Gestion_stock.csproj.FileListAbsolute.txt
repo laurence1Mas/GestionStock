@@ -614,3 +614,4 @@ E:\narada\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.Userdas
 E:\narada\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.usercontols.vente.resources
 E:\narada\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.csproj.GenerateResource.Cache
 E:\narada\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.exe.licenses
+E:\narada\GestionStock\Gestion_stock\obj\Debug\Gestion_stock.resetPassword.resources

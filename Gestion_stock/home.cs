@@ -89,7 +89,8 @@ namespace Gestion_stock
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            resetPassword frmreset = new resetPassword();
+            frmreset.Show();
         }
     }
 }

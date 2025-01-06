@@ -140,7 +140,7 @@ namespace Gestion_stock.classes
         {
             List<Stocks> list = new List<Stocks>();
             con = new dataconnexion().DBConnect();
-            string strquery = "exec GenerateJournal";
+            string strquery = "exec GenerateJournalLimit";
             SqlCommand cmd = new SqlCommand(strquery, con);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
