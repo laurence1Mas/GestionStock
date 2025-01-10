@@ -60,6 +60,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnStock);
+            this.panel1.Controls.Add(this.btnFournisseur);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btndepense);
@@ -67,8 +69,6 @@
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.btndashboard);
             this.panel1.Controls.Add(this.btnVente);
-            this.panel1.Controls.Add(this.btnStock);
-            this.panel1.Controls.Add(this.btnFournisseur);
             this.panel1.Controls.Add(this.btnApprov);
             this.panel1.Controls.Add(this.btnproduit);
             this.panel1.Controls.Add(this.btnclient);
@@ -112,7 +112,7 @@
             this.btndepense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndepense.ForeColor = System.Drawing.Color.White;
             this.btndepense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndepense.Location = new System.Drawing.Point(10, 528);
+            this.btndepense.Location = new System.Drawing.Point(15, 476);
             this.btndepense.Name = "btndepense";
             this.btndepense.Size = new System.Drawing.Size(182, 41);
             this.btndepense.TabIndex = 20;
@@ -173,7 +173,7 @@
             this.btnVente.ForeColor = System.Drawing.Color.White;
             this.btnVente.Image = global::Gestion_stock.Properties.Resources.buy_30px;
             this.btnVente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVente.Location = new System.Drawing.Point(12, 472);
+            this.btnVente.Location = new System.Drawing.Point(15, 420);
             this.btnVente.Name = "btnVente";
             this.btnVente.Size = new System.Drawing.Size(182, 41);
             this.btnVente.TabIndex = 15;
@@ -191,7 +191,7 @@
             this.btnStock.ForeColor = System.Drawing.Color.White;
             this.btnStock.Image = global::Gestion_stock.Properties.Resources.livestock_24px;
             this.btnStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStock.Location = new System.Drawing.Point(14, 416);
+            this.btnStock.Location = new System.Drawing.Point(15, 533);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(182, 41);
             this.btnStock.TabIndex = 14;
@@ -209,7 +209,7 @@
             this.btnFournisseur.ForeColor = System.Drawing.Color.White;
             this.btnFournisseur.Image = global::Gestion_stock.Properties.Resources.customer_30px1;
             this.btnFournisseur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFournisseur.Location = new System.Drawing.Point(14, 360);
+            this.btnFournisseur.Location = new System.Drawing.Point(12, 246);
             this.btnFournisseur.Name = "btnFournisseur";
             this.btnFournisseur.Size = new System.Drawing.Size(182, 41);
             this.btnFournisseur.TabIndex = 13;
@@ -227,7 +227,7 @@
             this.btnApprov.ForeColor = System.Drawing.Color.White;
             this.btnApprov.Image = global::Gestion_stock.Properties.Resources.basket_30px;
             this.btnApprov.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApprov.Location = new System.Drawing.Point(14, 304);
+            this.btnApprov.Location = new System.Drawing.Point(15, 362);
             this.btnApprov.Name = "btnApprov";
             this.btnApprov.Size = new System.Drawing.Size(182, 41);
             this.btnApprov.TabIndex = 12;
@@ -245,7 +245,7 @@
             this.btnproduit.ForeColor = System.Drawing.Color.White;
             this.btnproduit.Image = global::Gestion_stock.Properties.Resources.tags_30px;
             this.btnproduit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnproduit.Location = new System.Drawing.Point(14, 245);
+            this.btnproduit.Location = new System.Drawing.Point(14, 305);
             this.btnproduit.Name = "btnproduit";
             this.btnproduit.Size = new System.Drawing.Size(180, 41);
             this.btnproduit.TabIndex = 10;

@@ -207,5 +207,11 @@ namespace Gestion_stock.usercontols
         {
             rapportchekdate();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frms.frm_client frm_client = new frms.frm_client();
+            frm_client.Show();
+        }
     }
 }

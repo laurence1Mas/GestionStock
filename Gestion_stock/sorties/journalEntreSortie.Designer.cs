@@ -222,10 +222,10 @@
             // 
             this.xrLabel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.xrLabel3.ForeColor = System.Drawing.Color.Navy;
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(169.8958F, 42.72917F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(135.5206F, 42.72919F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(295.7292F, 23F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(374.8961F, 23F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseForeColor = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;

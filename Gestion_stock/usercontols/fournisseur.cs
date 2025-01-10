@@ -18,6 +18,7 @@ namespace Gestion_stock.usercontols
         public fournisseur()
         {
             InitializeComponent();
+            loadListe();
         }
 
         private void dgclient_CellContentClick(object sender, DataGridViewCellEventArgs e)

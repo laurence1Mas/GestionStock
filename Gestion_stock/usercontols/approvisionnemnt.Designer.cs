@@ -60,6 +60,7 @@
             this.dateDebut = new System.Windows.Forms.DateTimePicker();
             this.dateFin = new System.Windows.Forms.DateTimePicker();
             this.btncheckdate = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgachat)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -223,6 +224,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtdateAchat);
             this.groupBox1.Controls.Add(this.cmbproduit);
             this.groupBox1.Controls.Add(this.label5);
@@ -278,7 +280,7 @@
             this.txtquantiteAchat.Location = new System.Drawing.Point(50, 171);
             this.txtquantiteAchat.Multiline = true;
             this.txtquantiteAchat.Name = "txtquantiteAchat";
-            this.txtquantiteAchat.Size = new System.Drawing.Size(222, 34);
+            this.txtquantiteAchat.Size = new System.Drawing.Size(204, 34);
             this.txtquantiteAchat.TabIndex = 16;
             // 
             // label4
@@ -297,7 +299,7 @@
             this.cmbfournisseur.FormattingEnabled = true;
             this.cmbfournisseur.Location = new System.Drawing.Point(50, 79);
             this.cmbfournisseur.Name = "cmbfournisseur";
-            this.cmbfournisseur.Size = new System.Drawing.Size(222, 27);
+            this.cmbfournisseur.Size = new System.Drawing.Size(204, 27);
             this.cmbfournisseur.TabIndex = 14;
             // 
             // txtcode
@@ -413,6 +415,22 @@
             this.btncheckdate.UseVisualStyleBackColor = true;
             this.btncheckdate.Click += new System.EventHandler(this.btncheckdate_Click);
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = global::Gestion_stock.Properties.Resources.plus_26px;
+            this.button1.Location = new System.Drawing.Point(260, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 31);
+            this.button1.TabIndex = 46;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // approvisionnemnt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,5 +490,6 @@
         private System.Windows.Forms.DateTimePicker dateDebut;
         private System.Windows.Forms.DateTimePicker dateFin;
         private System.Windows.Forms.Button btncheckdate;
+        private System.Windows.Forms.Button button1;
     }
 }

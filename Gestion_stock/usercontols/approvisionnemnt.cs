@@ -193,5 +193,10 @@ namespace Gestion_stock.usercontols
             rapportchekdate();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frms.frm_fournisseur frm_fournisseur = new frms.frm_fournisseur();
+            frm_fournisseur.Show();
+        }
     }
 }

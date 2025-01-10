@@ -37,13 +37,13 @@ namespace Gestion_stock.usercontols
 
             if (value >= 1)
             {
-                MessageBox.Show("Operation effectuer avec succès", "adherant", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Operation effectuer avec succès", "client", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadListe();
                 refresh();
             }
             else
             {
-                MessageBox.Show("Operation non effectuer", "adherant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Operation non effectuer", "client", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 loadListe();
                 refresh();
             }
@@ -117,13 +117,13 @@ namespace Gestion_stock.usercontols
 
             if (value >= 1)
             {
-                MessageBox.Show("Operation effectuer succès", "adherant", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Operation effectuer succès", "client", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadListe();
                 refresh();
             }
             else
             {
-                MessageBox.Show("Operation non effectuer", "adherant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Operation non effectuer", "client", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 loadListe();
                 refresh();
             }
