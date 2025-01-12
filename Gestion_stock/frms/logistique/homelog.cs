@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestion_stock.frms.logistique
 {
-    public partial class home : UserControl
+    public partial class homelog : UserControl
     {
-        public home()
+        public homelog()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Gestion_stock.frms.logistique
 {
-    partial class home
+    partial class homelog
     {
         /// <summary> 
         /// Required designer variable.

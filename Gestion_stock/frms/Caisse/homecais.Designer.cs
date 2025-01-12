@@ -1,6 +1,6 @@
 ﻿namespace Gestion_stock.frms.Caisse
 {
-    partial class home
+    partial class homecais
     {
         /// <summary> 
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestion_stock.frms.Caisse
 {
-    public partial class home : UserControl
+    public partial class homecais : UserControl
     {
-        public home()
+        public homecais()
         {
             InitializeComponent();
         }
