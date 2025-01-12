@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\achat.cs" />
+    <Compile Include="classes\ClsAgent.cs" />
     <Compile Include="classes\clsclient.cs" />
     <Compile Include="classes\clsdepense.cs" />
     <Compile Include="classes\clsfournisseur.cs" />
@@ -112,11 +113,29 @@
     <Compile Include="frms\frm_fournisseur.Designer.cs">
       <DependentUpon>frm_fournisseur.cs</DependentUpon>
     </Compile>
+    <Compile Include="frms\Frm_PrincipalA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frms\Frm_PrincipalA.Designer.cs">
+      <DependentUpon>Frm_PrincipalA.cs</DependentUpon>
+    </Compile>
     <Compile Include="frms\frm_produit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frms\frm_produit.Designer.cs">
       <DependentUpon>frm_produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frms\Caisse\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frms\Caisse\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frms\logistique\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frms\logistique\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
     </Compile>
     <Compile Include="home.cs">
       <SubType>Form</SubType>
@@ -246,6 +265,42 @@
     <Compile Include="usercontols\fournisseur.Designer.cs">
       <DependentUpon>fournisseur.cs</DependentUpon>
     </Compile>
+    <Compile Include="usercontols\Logistique\aide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Logistique\aide.Designer.cs">
+      <DependentUpon>aide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\Logistique\approvisionnemnt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Logistique\approvisionnemnt.Designer.cs">
+      <DependentUpon>approvisionnemnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\Logistique\fournisseur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Logistique\fournisseur.Designer.cs">
+      <DependentUpon>fournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\Logistique\produit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Logistique\produit.Designer.cs">
+      <DependentUpon>produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\Logistique\stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Logistique\stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontols\Logistique\Userdashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontols\Logistique\Userdashboard.Designer.cs">
+      <DependentUpon>Userdashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="usercontols\produit.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +330,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frms\frm_fournisseur.resx">
       <DependentUpon>frm_fournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frms\Caisse\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frms\logistique\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
@@ -349,6 +410,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\fournisseur.resx">
       <DependentUpon>fournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Logistique\aide.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Logistique\approvisionnemnt.resx">
+      <DependentUpon>approvisionnemnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Logistique\fournisseur.resx">
+      <DependentUpon>fournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Logistique\produit.resx">
+      <DependentUpon>produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Logistique\stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontols\Logistique\Userdashboard.resx">
+      <DependentUpon>Userdashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usercontols\produit.resx">
       <DependentUpon>produit.cs</DependentUpon>
@@ -457,6 +536,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="usercontols\Caisse\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
